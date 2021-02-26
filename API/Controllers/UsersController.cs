@@ -24,7 +24,7 @@ namespace API.Controllers
         {
             return await _context.Users.ToListAsync();
 
-            return users;
+
 
         }
 
