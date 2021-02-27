@@ -23,8 +23,6 @@ namespace API
         public Startup(IConfiguration config)
         {
             _config = config;
-
-
         }
 
         public IConfiguration Configuration { get; }
