@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   model: any = {};
-  loggedIn: boolean = false;
+  loggedIn = false;
 
   constructor(private accountService: AccountService) {}
 
@@ -24,5 +24,9 @@ export class NavComponent implements OnInit {
         console.log(error);
       }
     );
+  }
+
+  logout() {
+    this.loggedIn = false;
   }
 }
